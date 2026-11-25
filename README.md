@@ -47,10 +47,7 @@ Atividade base/
 ├── testes/
 │   ├── testes.ts            # suíte automatizada (61 verificações)
 │   └── arqueiro_teste.ts    # subclasses auxiliares só para os testes
-├── poo_07_exercicio_base_revisao.pdf
-├── package.json
-├── tsconfig.json
-└── README.md
+└── tsconfig.json
 ```
 
 A separação foi feita em três grupos:
