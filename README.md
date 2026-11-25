@@ -60,26 +60,23 @@ A separação foi feita em três grupos:
 
 ## Como executar
 
-Pré-requisito: **Node.js 18+** e **npm**.
+Pré-requisito: **Node.js 18+**.
+
+O projeto é executado diretamente com **`npx tsx`**, sem necessidade de compilar
+manualmente para JavaScript.
 
 ```bash
-# instalar dependências de desenvolvimento (TypeScript e tipos do Node)
+# (opcional) instalar as dependências locais
 npm install
 
-# compilar o projeto
-npm run build
-
 # executar a demonstração do enunciado
-npm start
+npx tsx src/app.ts
 
 # executar a suíte completa de testes
-npm test
-
-# limpar a pasta dist
-npm run clean
+npx tsx testes/testes.ts
 ```
 
-Saída esperada do `npm test`:
+Saída esperada de `npx tsx testes/testes.ts`:
 
 ```text
 ============================================================
@@ -267,7 +264,7 @@ Aqui o `instanceof` é necessário porque `recuperarMana()` **não existe** em `
 
 ## Sequência oficial de testes
 
-A demonstração (`npm start`) e a suíte (`npm test`) reproduzem a sequência do PDF:
+A demonstração (`npx tsx src/app.ts`) e a suíte (`npx tsx testes/testes.ts`) reproduzem a sequência do PDF:
 
 | # | Operação | Resultado esperado | Resultado obtido |
 |---|---|---|---|
