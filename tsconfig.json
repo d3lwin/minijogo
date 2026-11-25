@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "lib": ["ES2020"],
+    "strict": true,
+    "esModuleInterop": true,
+    "types": ["node"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "verbatimModuleSyntax": false
+  },
+  "include": ["src/**/*.ts", "testes/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
